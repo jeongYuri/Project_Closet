@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="550dp"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    tools:context=".Closet_rec_Activity">
+
+
+    <TextView
+        android:id="@+id/box_notice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/box_background2"
+        android:fontFamily="@font/leferibaseregular"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+        android:text="       현재             ℃ 에 추천하는 옷입니다."
+        android:textColor="#656565"
+        android:textSize="13dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:id="@+id/tv_rec_temp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:fontFamily="@font/leferibasebold"
+        android:paddingLeft="5dp"
+        android:text="15"
+        android:textColor="#3B63EF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/box_notice"
+        app:layout_constraintStart_toStartOf="@+id/box_notice"
+        app:layout_constraintTop_toTopOf="@+id/box_notice" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_recommand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <GridLayout
+        android:id="@+id/recycler_closet_view2"
+        android:layout_width="280dp"
+        android:layout_height="350dp"
+
+        android:layout_marginTop="15dp"
+        android:columnCount="2"
+        android:rowCount="2"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_notice"
+        tools:ignore="MissingConstraints">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview2_xml"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:layout_constraintTop_toBottomOf="@+id/box_notice" />
+    </GridLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/btn_x"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_x"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/box_notice_weather"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/box_background"
+        android:fontFamily="@font/leferipointwhite"
+        android:visibility="invisible"
+
+
+        android:paddingLeft="33dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="7dp"
+        android:text="현재 추천된  [니트]  는/은 조금 더우실 수도 있어요."
+        android:textColor="#656565"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_closet_view2"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_ai_smaile"
+        app:layout_constraintBottom_toBottomOf="@+id/box_notice_weather"
+        app:layout_constraintStart_toStartOf="@+id/box_notice_weather"
+        app:layout_constraintTop_toTopOf="@+id/box_notice_weather" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

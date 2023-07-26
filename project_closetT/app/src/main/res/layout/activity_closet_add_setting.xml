@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+
+    tools:context=".Closet_add_settingActivity">
+
+
+    <ImageView
+        android:id="@+id/image_info_view_add"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+
+
+        android:background="@drawable/box_background"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cool"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:id="@+id/tvtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/leferibasebold"
+        android:text="날씨 맞춤 설정"
+        android:textColor="#3B63EF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_soso"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="적당해요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cold"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_chilly"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="서늘해요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_soso"
+        app:layout_constraintTop_toBottomOf="@+id/btn_very_cold"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_warm"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="따뜻해요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_chilly"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hot"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_cool"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="시원해요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_warm"
+        app:layout_constraintTop_toBottomOf="@+id/btn_very_hot"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/box_notice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/box_background"
+        android:fontFamily="@font/leferibaseregular"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+
+
+        android:text="현재 온도는               ℃ 입니다."
+        android:textColor="#656565"
+        android:textSize="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvtv"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/box_notice_review"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/box_background"
+
+        android:fontFamily="@font/leferibaseregular"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="7dp"
+        android:paddingLeft="15dp"
+        android:text="아쉬운 점이 있다면 의견을 자유롭게 남겨주세요."
+        android:textColor="#A0A0A0"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/box_notice"
+        app:layout_constraintTop_toTopOf="@+id/box_notice"
+        app:srcCompat="@drawable/icon_ai_smaile" />
+
+    <TextView
+        android:id="@+id/tv_rec_temp_add"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:fontFamily="@font/leferibasebold"
+        android:paddingLeft="5dp"
+        android:text="15"
+        android:textColor="#3B63EF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/box_notice"
+        app:layout_constraintStart_toStartOf="@+id/box_notice"
+        app:layout_constraintTop_toTopOf="@+id/box_notice" />
+
+    <CheckBox
+        android:id="@+id/btn_very_cold"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="너무 추웠어요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_cold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login4"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_hot"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="더웠어요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_very_cold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login4"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_very_hot"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="너무 더웠어요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_hot"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_login4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/leferibasebold"
+        android:text="현재 온도 어떠셨어요?"
+        android:textColor="#3B63EF"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_notice"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="180dp"
+        android:layout_height="0.5px"
+        android:background="#C4C4C4"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_login4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_login4"
+        app:layout_constraintTop_toTopOf="@+id/tv_login4"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/btn_cold"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_checked"
+        android:button="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="추웠어요"
+        android:textAlignment="center"
+        android:textColor="@drawable/btn_checked_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login4"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/btn_cancel_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sub"
+            android:fontFamily="@font/leferibaseregular"
+            android:text="취소"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_save_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_main"
+            android:fontFamily="@font/leferibaseregular"
+            android:text="저장"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

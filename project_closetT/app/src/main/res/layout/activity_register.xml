@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="212dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainlogo" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/leferibasebold"
+        android:text="회원가입"
+        android:textColor="#3B63EF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/box_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_main"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_pw" />
+
+    <EditText
+        android:id="@+id/box_pw"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox_main"
+        android:ems="10"
+        android:fontFamily="@font/leferipointwhite"
+        android:hint="비밀번호 (PW)"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_email"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/box_email"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox_main"
+        android:ems="10"
+        android:fontFamily="@font/leferipointwhite"
+        android:hint="이메일 (EMAIL)"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/box_name"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/textbox_main"
+        android:ems="10"
+        android:fontFamily="@font/leferipointwhite"
+        android:hint="이름 (NAME)"
+        android:paddingLeft="15dp"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_text"
+        android:layout_width="90dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="로그인 하기"
+        android:textColor="#3B63EF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_info_login"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/leferipointwhite"
+        android:gravity="center"
+        android:text="이미 회원이신가요?"
+        android:textAlignment="center"
+        android:textColor="#656565"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

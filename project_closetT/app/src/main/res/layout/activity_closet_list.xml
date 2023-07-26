@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Closet_all_ImageActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_plus"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_plus"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_text2"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="전체"
+        android:textColor="#656565"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_text4"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="상의"
+        android:textColor="#656565"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_text2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_text7"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="하의"
+        android:textColor="#656565"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_text4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_text5"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="아우터"
+        android:textColor="#656565"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_text7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_text6"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="셋업"
+        android:textColor="#656565"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/btn_text5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_login2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/leferibasebold"
+        android:text="님의 옷장"
+        android:textColor="#3B63EF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_login3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_login3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/leferibasebold"
+        android:text="사용자이름"
+        android:textColor="#3B63EF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <GridLayout
+        android:id="@+id/recycler_closet_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginHorizontal="15dp"
+
+        android:layout_marginTop="10dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintTop_toBottomOf="@+id/box_notice"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_xml"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginTop="5dp" />
+
+
+    </GridLayout>
+
+
+    <TextView
+        android:id="@+id/box_notice"
+        android:layout_width="270dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+
+        android:background="@drawable/box_background2"
+        android:fontFamily="@font/leferibaseregular"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+        android:paddingLeft="10dp"
+        android:text="현재 날씨에 추천하는 옷 보러가기      "
+        android:textColor="#656565"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_text7" />
+
+
+    <ImageButton
+        android:id="@+id/btn_rec_click"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/box_notice"
+        app:layout_constraintEnd_toEndOf="@+id/box_notice"
+        app:layout_constraintTop_toTopOf="@+id/box_notice"
+        app:srcCompat="@drawable/icon_click"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_recommand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_text2"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

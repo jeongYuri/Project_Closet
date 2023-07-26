@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_notlogin"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="15dp">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="180dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="최고 : 7℃   최저 : -2℃"
+        android:textColor="#656565"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="150dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/leferibasebold"
+
+        android:gravity="left"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+
+
+        android:textColor="#2B2B2B"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/leferibasebold"
+        android:text="℃"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_temp"
+        app:layout_constraintStart_toEndOf="@+id/tv_temp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_login1"
+        android:layout_width="66dp"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_text"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="로그인"
+        android:textColor="#3B63EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_weather"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_main"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="날씨 더 보기"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_closet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_closet"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/btn_main"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="나의 옷장"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_sun_cloud" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:rotation="340"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/winter_jacket"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:rotation="10"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/pants"
+        tools:ignore="MissingConstraints" />
+
+    <GridLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="381dp"
+        android:layout_height="120dp"
+
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:rowCount="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/bg_grey1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_margin="13dp"
+            android:background="@drawable/box_background"
+
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/bg_maingrey1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_wind"
+
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/bg_grey2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/box_background"
+
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/bg_maingrey2"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_main_rain"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/bg_grey3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/box_background"
+
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/bg_maingrey3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_humidity"
+            android:gravity="center" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_wind"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/leferibasebold"
+            android:gravity="bottom|center"
+            android:text="2.9m/s"
+            android:textColor="#656565"
+            android:textSize="15dp"
+
+            android:layout_marginRight="20dp"
+
+
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_rainstate"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/leferibasebold"
+            android:layout_weight="1"
+
+
+            android:gravity="bottom|center"
+            android:text="비"
+            android:textColor="#656565"
+            android:textSize="15dp"
+
+            android:layout_marginLeft="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/leferibasebold"
+            android:gravity="bottom|center"
+            android:text="85%"
+            android:textColor="#656565"
+            android:textSize="15dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+
+            app:layout_constrainedWidth="true"
+
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_wind_text"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+
+            android:fontFamily="@font/leferibaseregular"
+            android:gravity="bottom|center"
+            android:text="바람"
+            android:textColor="#656565"
+            android:textSize="15dp"
+
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_rainstate_text"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+
+            android:fontFamily="@font/leferibaseregular"
+
+            android:gravity="bottom|center"
+            android:text="상태"
+            android:textColor="#656565"
+            android:textSize="15dp"
+
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_humidity_text"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/leferibaseregular"
+            android:gravity="bottom|center"
+            android:text="습도"
+            android:textColor="#656565"
+            android:textSize="15dp"
+
+            app:layout_constrainedWidth="true"
+
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

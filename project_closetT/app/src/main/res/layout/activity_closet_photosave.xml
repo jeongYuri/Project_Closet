@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpPhotoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="아래 옷 그림을 눌러 사진을 등록해주세요."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/box_bg"
+        android:layout_width="301dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/box_background"
+        android:baselineAligned="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="251dp"
+            android:layout_height="197dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571"
+            app:srcCompat="@drawable/img_clothes_tee_ex" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_View"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_login4"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/leferibasebold"
+            android:text="상의"
+            android:textColor="#3B63EF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/LongTop"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="긴팔" />
+
+        <CheckBox
+            android:id="@+id/ShortTop"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="반팔" />
+
+        <CheckBox
+            android:id="@+id/NeatTop"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="니트" />
+
+        <CheckBox
+            android:id="@+id/ShirtTop"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="셔츠" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/tv_2"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/leferibasebold"
+            android:text="하의"
+            android:textColor="#3B63EF"
+            android:textSize="18dp">
+
+        </TextView>
+
+
+
+        <CheckBox
+            android:id="@+id/LongBottom"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="긴바지" />
+
+        <CheckBox
+            android:id="@+id/ShortBottom"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="반바지" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/leferibasebold"
+            android:text="아우터"
+            android:textColor="#3B63EF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/jacket"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="자켓" />
+        <CheckBox
+            android:id="@+id/padding"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="패딩" />
+        <CheckBox
+            android:id="@+id/coat"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="코트" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/leferibasebold"
+            android:text="계절"
+            android:textColor="#3B63EF"
+            android:textSize="18dp"
+
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/spring"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="봄" />
+
+        <CheckBox
+            android:id="@+id/summer"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="여름" />
+
+        <CheckBox
+            android:id="@+id/fall"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="가을" />
+
+        <CheckBox
+            android:id="@+id/winter"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="겨울" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_custom"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/leferibasebold"
+            android:text="맞춤설정"
+            android:textColor="#3B63EF"
+            android:textSize="18dp"
+
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/thin"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="얇음" />
+
+        <CheckBox
+            android:id="@+id/thick"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="두꺼움" />
+
+        <CheckBox
+            android:id="@+id/fourSeason"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:text="사계절" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+
+        android:textAlignment="center">
+
+
+        <Button
+            android:id="@+id/img_list"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/btn_sub"
+            android:fontFamily="@font/leferibaseregular"
+            android:text="나의 옷장"
+
+            android:textColor="#656565"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:baselineAligned="false"
+            android:text="UPLOAD"
+            android:background="@drawable/btn_main"
+            android:textColor="#FFFFFF"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/leferibaseregular"
+
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="13dp" />
+    </LinearLayout>
+
+</LinearLayout>
