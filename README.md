@@ -1,4 +1,4 @@
-# ☀️👖Project_Closet / ## 내 손의 옷장
+# ☀️👖Project_Closet / 내 손의 옷장
 
 ### 소개
 
