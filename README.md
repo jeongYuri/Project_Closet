@@ -1,4 +1,4 @@
-![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/80bfc22e-f610-499f-91d8-d08d88ecf679)# ☀️👖Project_Closet / 내 손의 옷장
+# ☀️👖Project_Closet / 내 손의 옷장
 
 ## Description
 📌2022 Capstone Design Project                                                                                                      🕰️2022.03~2022.12  
