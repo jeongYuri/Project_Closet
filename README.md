@@ -19,14 +19,16 @@ JeongYuri:Weather Open Api parsing 및 날씨관련 기능, DB 관리
 -로그인 
 
 ### About Project
-<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
-<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
-<img src="https://img.shields.io/badge/androidstudio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white">
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"><img src="https://img.shields.io/badge/androidstudio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white">
 <br>
 
 
 ### Result
-
+<img src="https://github.com/jeongYuri/Project_Closet/assets/74125993/70e8390a-3408-432f-8dc9-b925a8cfb015.png  width="200" height="400"/>
+<img src="https://github.com/jeongYuri/Project_Closet/assets/74125993/1eedb935-8a2d-4b5e-ac85-311477c3b03b.png  width="200" height="400"/>
+<img src="https://github.com/jeongYuri/Project_Closet/assets/74125993/4bd8ebd2-0184-4998-ae5a-a8b067ff4b80.png  width="200" height="400"/>
+<img src="https://github.com/jeongYuri/Project_Closet/assets/74125993/0f575d46-7876-496d-9a7a-d2118eb117da.png  width="200" height="400"/>
+<img src="https://github.com/jeongYuri/Project_Closet/assets/74125993/347a45ed-430b-4436-9c20-9b0f0f054867.png  width="200" height="400"/>
 
 
 
