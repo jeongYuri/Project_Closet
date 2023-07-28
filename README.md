@@ -1,4 +1,4 @@
-# ☀️👖Project_Closet / 내 손의 옷장
+# ☀️👖 내 손의 옷장
 
 ## Description
 📌2022 Capstone Design Project                                                                                                                          
