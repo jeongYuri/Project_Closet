@@ -1,11 +1,38 @@
 # ☀️👖Project_Closet / 내 손의 옷장
-
-### 소개
-
-### 목적
--날씨에 적합한 옷 종류 추천을 통하여 사용자들의 외출 준비시간을 감소시키고자 한다.                                                                                 
--어플리케이션을 이용하여 나만의 옷장 기능을 통해 내 옷을 저장하고, 카테고리 별 옷을 설정하여 관리한다.
-
 ___
--2022 캡스톤 프로젝트                                                                                                                                          
--개발 기간:2022.03~2022.12                                                                                                                                   -팀 구성:FE-1명 BE-3명
+
+## Description
+📌2022 Capstone Design Project                                                                                                      🕰️2022.03~2022.12  
+
+## Member
+kim:DB 이미지 Url 관련 기능, 로그인 구현, 옷장 구현
+kim:DB 관리 및 구현, 옷 추천 및 사용자 맟춤 설계 및 구현, UI 디자인
+ki:DB 관리, 옷 추천 구현 및 사용자 맞춤 설계, UI 디자인, 보고서 관리
+JeongYuri:Weather Open Api parsing 및 날씨관련 기능, DB 관
+## System configuration
+![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/ae695c78-3040-49b4-b79f-db9e9867619a)
+
+### Main Function
+-실시간 날씨 정보 제공
+-옷장 기능(사용자 맞춤형 기능)
+-날씨에 적합한 옷 추천
+-로그인 
+
+### About Project
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+<img src="https://img.shields.io/badge/firebase-#FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
+
+
+### Result
+![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/70e8390a-3408-432f-8dc9-b925a8cfb015)
+![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/1eedb935-8a2d-4b5e-ac85-311477c3b03b)
+![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/4bd8ebd2-0184-4998-ae5a-a8b067ff4b80)
+![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/0f575d46-7876-496d-9a7a-d2118eb117da)
+![image](https://github.com/jeongYuri/Project_Closet/assets/74125993/347a45ed-430b-4436-9c20-9b0f0f054867)
+
+
+
+
+
+
+
