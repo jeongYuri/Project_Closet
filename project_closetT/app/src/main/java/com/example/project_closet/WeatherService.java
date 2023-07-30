@@ -45,7 +45,7 @@ public class WeatherService extends Service {
     String rain_data;
 
 
-    String Service_key = "PXL4ObzaxgbrcVcEe5c8QTzAdF5bD9Y714d3X2Tus6DgtWsj10nEfjP6lUL6Z%2FAPd2pM1XQhuvJx%2BWrEo5%2BLfw%3D%3D";
+    String Service_key = " serviceKey";
     String num_of_rows = "1000";
     String page_no = "1";
     String date_type = "XML";
