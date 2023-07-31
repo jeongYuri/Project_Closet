@@ -5,8 +5,8 @@
   🕰️2022.03~2022.12  
 
 ## 🧜‍♀️Member
-kim👩‍💻:DB 이미지 Url 관련 기능, 로그인 구현, 옷장 구현                                                                                                          
-kim👩‍💻:DB 관리 및 구현, 옷 추천 및 사용자 맟춤 설계 및 구현, UI 디자인                                                                                           
+kimsu👩‍💻:DB 이미지 Url 관련 기능, 로그인 구현, 옷장 구현                                                                                                          
+kimhye👩‍💻:DB 관리 및 구현, 옷 추천 및 사용자 맟춤 설계 및 구현, UI 디자인                                                                                           
 ki👩‍💻:DB 관리, 옷 추천 구현 및 사용자 맞춤 설계, UI 디자인, 보고서 관리                                                                                          
 Jeong👩‍💻:Weather Open Api parsing 및 날씨관련 기능, DB 관리                                                                                                 
 ## System configuration
