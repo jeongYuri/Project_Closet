@@ -13,10 +13,13 @@ Jeong👩‍💻:Weather Open Api parsing 및 날씨관련 기능, DB 관리
 <p align="center"><img src="https://github.com/jeongYuri/Project_Closet/assets/74125993/ae695c78-3040-49b4-b79f-db9e9867619a.png" width="500" height="500"/>
 
 ### Main Function
--실시간 날씨 정보 제공                                                                                                                                      
--옷장 기능(사용자 맞춤형)                                                                                                                              
--날씨에 적합한 옷 추천                                                                                                                                      
--로그인                                                                                                                                                   
+- 실시간 날씨 정보 제공: 사용자에게 현재 날씨 정보를 실시간으로 제공합니다. 이 기능은 지역 또는 위치에 따라 날씨 상태, 온도, 습도, 바람 속도 등을 보여줍니다.
+
+- 옷장 기능(사용자 맞춤형): 사용자는 자신의 옷장을 관리하고 맞춤형 옷 추천을 받을 수 있습니다. 이 기능은 사용자가 보유한 의류 항목을 등록하고, 날씨 조건과 스타일에 따라 옷을 추천합니다.
+
+- 날씨에 적합한 옷 추천: 현재 날씨 정보를 기반으로 사용자에게 어떤 의류를 입을 것을 추천합니다. 예를 들어, 비 오는 날에 우산과 방수 외투를 추천하거나 더운 날에 편안한 옷을 추천할 수 있습니다.
+
+- 로그인: 사용자들은 개별 계정을 만들어 로그인할 수 있으며, 그들의 옷장 및 기본 설정을 유지하고 날씨 정보를 맞춤형으로 받을 수 있습니다.                                                                                                                                             
 
 ## About Project
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"> <img src="https://img.shields.io/badge/androidstudio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white">
